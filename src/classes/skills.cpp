@@ -1,19 +1,35 @@
-/* CHARACTER CLASS ENGINE - V1.0 */
+/* D2X: LAND BEFORE TIME - CHARACTER CLASS ENGINE */
 
-// RAPTOR HUNTER (Amazon Hybrid)
-void Skill_BoneJavelin() { /* Piercing Bleed: Str * 1.5; ignore 20% PhysRes */ }
-void Skill_PackCall() { /* Spawn 3 AI Deinonychus; 30s duration */ }
-void Skill_PrimitiveNet() { /* 3s Root; -15% Armor Shred */ }
+// RAPTOR HUNTER (Amazon/Assassin Hybrid)
+void Skill_BoneJavelin() { 
+    // High-velocity piercing projectile
+    // Damage: Strength * 1.5 + Weapon Min/Max
+    // Status: 100% Bleed chance for 5 seconds
+    // Special: Ignores 20% of target physical resistance
+}
+void Skill_PackCall() { 
+    // Summons 3 AI Deinonychus companions
+    // Duration: 30 Seconds | Cooldown: 60 Seconds
+    // Aura: Grants 10% Move Speed to the Pack
+}
+void Skill_PrimitiveNet() { 
+    // Roots target in place for 3 seconds
+    // Debuff: Reduces Target Armor by 15%
+}
 
-// REX WARRIOR (Barbarian Hybrid)
-void Skill_PrimalCleave() { /* 120-degree Arc; 3x Weapon Damage; 15 Knockback */ }
-void Skill_DinoGrip() { /* Passive: Dual-wield 2H Great-Clubs/Maces */ }
-void Skill_ApexRoar() { /* 5s AOE Stun; Fear debuff on non-bosses */ }
+// REX WARRIOR (Barbarian Core)
+void Skill_PrimalCleave() { 
+    // 120-degree frontal arc sweep
+    // Damage: 300% Weapon Damage
+    // Effect: 15 Magnitude Knockback
+}
+void Skill_DinoGrip() { 
+    // Passive: Mastery of prehistoric strength
+    // Feature: Dual-wield 2-handed Great-Clubs and Maces
+}
 
-// PTERO-MAGE (Sorceress Hybrid)
-void Skill_StormWing() { /* Flight Pathing; Electric Aura Radius: 5 */ }
-void Skill_Supercell() { /* Chain Lightning; 4-target bounce */ }
-
-// SHAMAN OF THE WILD (Druid Hybrid)
-void Skill_AnkyloForm() { /* +500 Def; 25% Dmg Reflection */ }
-void Skill_RaptorForm() { /* +40% MS; 100% Crit on Leap Attack */ }
+// PTERO-MAGE (Sorceress/Druid Hybrid)
+void Skill_StormWing() { 
+    // Flight pathing activation
+    // Aura: Electric Shock (Radius: 5)
+}

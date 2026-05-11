@@ -1,14 +1,19 @@
-/* APEX PREDATOR AI SCRIPTS */
+/* D2X: LAND BEFORE TIME - APEX PREDATOR AI */
 
 void Boss_SabertoothAlpha(Unit* boss) {
-    if (World::IsBlizzard()) boss->Alpha(0.10f); // Active Camo
-}
-
-void Boss_UndeadGiga(Unit* boss) {
-    if (boss->HP < 0.5f) {
-        World::ShatterFloor(ICE_SPIKES);
-        Spawn::Minions(GLACIAL_RAPTOR, 5);
+    // Stalking Logic: Active during Act 3 Blizzards
+    if (World::IsBlizzard()) {
+        boss->AlphaChannel = 0.10f; // 90% Transparency
+        boss->Speed *= 1.25f;       // Speed boost in snow
     }
 }
 
-void Boss_AmberTyrant() { /* Wave 10 Amber Trials Guardian */ }
+void Boss_UndeadGiga(Unit* boss) {
+    // Multi-phase Lich transformation
+    if (boss->HP_Percent < 50) {
+        World::ShatterFloor(ICE_SPIKES); // Environmental hazard
+        for(int i=0; i<5; i++) {
+            Spawn::Minion(GLACIAL_RAPTOR);
+        }
+    }
+}
