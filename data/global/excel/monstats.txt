@@ -1,2 +1,3 @@
-Name: Rex_Warrior_Elite | HP: 5000 | Speed: 12
-Name: Raptor_Hunter_Elite | HP: 2200 | Speed: 18
+Name: Rex_Warrior_Elite | HP: 5000 | Speed: 12 | Resist: Fire
+Name: Sabertooth_Alpha  | HP: 12000 | Speed: 25 | Resist: Cold
+Name: Glacial_Raptor    | HP: 1500  | Speed: 20 | Resist: Cold

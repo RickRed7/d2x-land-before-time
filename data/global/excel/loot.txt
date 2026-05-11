@@ -1,0 +1,2 @@
+Item: Amber_Shard | DropRate: 0.05 + (Wave * 0.01)
+Item: Mammoth_Plate | DropRate: 0.01 (Boss Only)
