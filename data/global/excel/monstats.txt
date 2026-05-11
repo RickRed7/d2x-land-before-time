@@ -1,0 +1,2 @@
+Name: Rex_Warrior_Elite | HP: 5000 | Speed: 12
+Name: Raptor_Hunter_Elite | HP: 2200 | Speed: 18
