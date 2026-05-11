@@ -1,3 +1,8 @@
-Name: Rex_Warrior_Elite | HP: 5000 | Speed: 12 | Resist: Fire
-Name: Sabertooth_Alpha  | HP: 12000 | Speed: 25 | Resist: Cold
-Name: Glacial_Raptor    | HP: 1500  | Speed: 20 | Resist: Cold
+/* D2X MONSTER DATA - ALPHA 1.0 */
+Name: Jungle_Raptor   | HP: 800   | Speed: 18 | Resist: Poison | Act: 1
+Name: Desert_Rex      | HP: 2500  | Speed: 10 | Resist: Fire   | Act: 2
+Name: Glacial_Raptor  | HP: 1500  | Speed: 20 | Resist: Cold   | Act: 3
+Name: Sabertooth_Alp  | HP: 12000 | Speed: 25 | Resist: Cold   | Act: 3 (BOSS)
+Name: Void_Terror     | HP: 5000  | Speed: 15 | Resist: Magic  | Act: 4
+Name: Undead_Giga     | HP: 25000 | Speed: 12 | Resist: Phys   | Act: 4 (BOSS)
+Name: Amber_Tyrant    | HP: 50000 | Speed: 20 | Resist: All    | Act: 5 (BOSS)

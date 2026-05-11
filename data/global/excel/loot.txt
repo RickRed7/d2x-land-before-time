@@ -1,2 +1,7 @@
-Item: Amber_Shard | DropRate: 0.05 + (Wave * 0.01)
-Item: Mammoth_Plate | DropRate: 0.01 (Boss Only)
+/* D2X LOOT DATA - ALPHA 1.0 */
+Item: Primitive_Spear | DropRate: 0.15 | Tier: 1
+Item: Bone_Shield     | DropRate: 0.10 | Tier: 1
+Item: Obsidian_Blade  | DropRate: 0.05 | Tier: 2
+Item: Mammoth_Plate   | DropRate: 0.01 | Tier: 3 (Legendary)
+Item: Amber_Shard     | DropRate: 0.05 + (Wave * 0.01) | Tier: Quest
+Item: Heart_of_Pangaea| DropRate: 1.00 | Boss: Amber_Tyrant

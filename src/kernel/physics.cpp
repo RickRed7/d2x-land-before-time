@@ -1,3 +1,18 @@
-/* Act 3/4 Physics: Ice & Low Gravity */
-float get_friction(int act) { return (act == 3) ? 0.02f : 0.8f; }
-float get_gravity(int act) { return (act == 4) ? 0.35f : 1.0f; }
+/* RUNETEK KERNEL - LOW LEVEL PHYSICS ENGINE */
+
+float ApplyFriction(float base, int terrainType) {
+    // Standard terrain friction calculations
+    if (terrainType == 0) return base * 0.8f;  // Dirt
+    if (terrainType == 1) return base * 0.02f; // Ice (Z-Axis Slide)
+    return base;
+}
+
+float ApplyGravity(float base, bool inVoidZone) {
+    // Gravitational constant modification for Act 4
+    if (inVoidZone) return base * 0.35f; // Meteor Zone Gravity
+    return base;
+}
+
+void ProcessZAxisMovement() {
+    // Logic for Raptor Pouncing and Ptero Flight
+}
